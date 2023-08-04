@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Whether</title>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+		<link href="./css/all.css" type="text/css" rel="stylesheet">
+		<link href="./css/bootstrap.css" type="text/css" rel="stylesheet">
+		<link href="./css/styles.css" type="text/css" rel="stylesheet">
+	</head>
+
+	<body>
+		<nav class="navbar navbar-expand-lg bg-body-tertiary pt-3 py-4">
+			<div class="container">
+				<div class="navbar-brand d-flex justify-content-between align-items-center gap-2">
+					<img src="./images/logo@2x.png">
+					<div class="text d-flex flex-column justify-content-center  align-items-start">
+						<p>Whether</p>
+						<p>tagline goes here</p>
+					</div>
+				</div>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+					aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<i class="fa-solid fa-bars"></i>
+				</button>
+				<div class="collapse navbar-collapse rounded-2 my-3" id="navbarSupportedContent">
+					<ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex justify-content-center align-items-center">
+						<li class="nav-item">
+							<a class="nav-link active" aria-current="page" href="/">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">News</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Live Cameras</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Photos</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Contact</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<main>
+			<div class="container py-5">
+				<div class="search-box d-flex rounded-pill bg-main">
+					<input type="text" id="searchBox" class="form-control bg-transparent  px-3 py-3  text-white shadow-none border-0"
+						placeholder="Find your location">
+					<button class="btn btn-info px-5 py-2 rounded-pill m-1 text-white">Find</button>
+				</div>
+			</div>
+			<div class="container">
+				<div class="days row">
+					<div class="day col-10 offset-1  offset-lg-0 col-lg-4 p-0 my-2 my-lg-0">
+						<div class="head-title d-flex justify-content-between align-content-center py-2 px-2 bg-sec color-sub ">
+							<p class="day-name" id="firstDay"></p>
+							<p class="month-name" id="currentDate"></p>
+						</div>
+						<div class="body px-3 py-2">
+							<p class="city-name py-2" id="currentCity"></p>
+							<div class="temp-deg py-2 d-flex justify-content-between">
+								<p class="num"><span id="current_temp_c"></span><sup>o</sup>C</p>
+								<div class="icon">
+									<img src="./images/113.png" id="currentIcon" alt="sun">
+								</div>
+							</div>
+							<p class="w-status" id="currentStatus"></p>
+						</div>
+						<div class="w-footer row py-3 px-3">
+							<div class="f-item col">
+								<div class="image">
+									<img src="./images/icon-umberella@2x.png" alt="icon-umberella">
+								</div>
+								<p>20%</p>
+							</div>
+							<div class="f-item col">
+								<div class="image">
+									<img src="./images/icon-wind@2x.png" alt="icon-wind">
+								</div>
+								<p>18km/h</p>
+							</div>
+							<div class="f-item col">
+								<div class="image">
+									<img src="./images/icon-compass@2x.png" alt="icon-wind">
+								</div>
+								<p>East</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="day col-10 offset-1  offset-lg-0 col-lg-4 day-middle p-0 my-2 my-lg-0">
+						<div class="head-title d-flex justify-content-center align-content-center py-2 px-2  bg-sec color-sub ">
+							<p class="day-name" id="dayName2"></p>
+						</div>
+						<div class="body py-3 text-center">
+							<div class="temp-deg py-2 d-flex justify-content-center">
+								<div class="icon text-center">
+									<img src="./images/113.png" alt="sun" id="icon2">
+								</div>
+							</div>
+							<p class="nums-bold h3"><span id="day2_maxtemp_c"></span> <sup>o</sup>C</p>
+							<p class="nums-light"><span id="day2_mintemp_c"></span><sup>o</sup>C </p>
+
+							<p class="w-status pt-3" id="status2"></p>
+						</div>
+					</div>
+
+					<div class="day col-10 offset-1  offset-lg-0 col-lg-4 p-0 my-2 my-lg-0">
+						<div class="head-title d-flex justify-content-center align-content-center py-2 px-2  bg-sec color-sub ">
+							<p class="day-name" id="dayName3"></p>
+						</div>
+						<div class="body py-3 text-center">
+							<div class="temp-deg py-2 d-flex justify-content-center">
+								<div class="icon text-center">
+									<img src="./images/113.png" alt="sun" id="icon3">
+								</div>
+							</div>
+								<p class="nums-bold h3"><span id="day3_maxtemp_c"> </span> <sup>o</sup>C</p>
+								<p class="nums-light"><span id="day3_mintemp_c"></span><sup>o</sup>C </p>
+
+							<p class="w-status pt-3" id="status3"></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer>
+			<div class="container py-5">
+				<div class="row">
+					<div class="col-12 col-lg-8">
+						<div class="search-box d-flex rounded-pill bg-main">
+							<input type="email" class="form-control bg-transparent  px-3 py-3  text-white shadow-none border-0"
+								placeholder="Enter your email to subscribe...">
+							<button class="btn btn-info px-5 py-2 rounded-pill m-1 text-white">Subscribe</button>
+						</div>
+						<p class="py-4 copyright-text" >Copyright &copy; 2023 Company name. Designed by Themezy. All rights reserved</p>
+					</div>
+					<div class="col-12 col-lg-4">
+						<div class="links d-flex justify-content-center">							
+								<a href="#">
+									<i class="fa-brands fa-facebook-f"></i>
+								</a>
+								<a href="#">
+									<i class="fa-brands fa-twitter"></i>
+								</a>
+								<a href="#">
+									<i class="fa-brands fa-google-plus"></i>
+								</a>
+								<a href="#">
+									<i class="fa-brands fa fa-pinterest"></i>
+								</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<script src="./js/bootstrap.bundle.min.js"></script>
+		<script src="./js/main.js"></script>
+	</body>
+
+</html>
